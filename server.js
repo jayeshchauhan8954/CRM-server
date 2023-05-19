@@ -59,6 +59,7 @@ async function init() {
 
 // Import routes
 require('./routes/auth.routes')(app);
+require('./routes/user.routes')(app);
 
 // Start the server to listen for HTTP requests at the specified port
 app.listen(serverConfig.PORT, () => {

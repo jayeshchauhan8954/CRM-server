@@ -47,3 +47,18 @@ app.listen('8080', () => {
 3. API for updating userType and userStatus
    
    Only admin should be able to update and find these above things
+
+1   ===== Routes
+   getting all the users (get)
+   getting user based on userId(get)
+   updting the user for usertype and 
+
+
+2	how many middleware
+	authrization 
+	authentication
+
+3   how many controllers 
+   getall user
+   getuserbyid
+   updateUser
