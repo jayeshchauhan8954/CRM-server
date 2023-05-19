@@ -31,7 +31,16 @@ validateSignUpRequest = async (req, res, next) => {
 	}
 
 	// Step 5: Validate the email
-	// Need to be implemented
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regular expression pattern for email validation
+	const isValidEmail = emailRegex.test(req.body.email);
+
+	if (!isValidEmail) {
+  		res.status(400).send({
+    		message: 'Failed! Invalid email'
+  		});
+  		return;
+		}
+
 
 	// Step 6: Check if the email already exists
 	const email = await User.findOne({ email: req.body.email });

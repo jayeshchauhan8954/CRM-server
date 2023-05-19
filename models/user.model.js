@@ -20,7 +20,14 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     lowercase: true,
-    unique: true // User's email address (case-insensitive, unique)
+    unique: true, // User's email address (case-insensitive, unique)
+    //  validate: {
+    //         validator: function (value) {
+    //             // Custom validation function
+    //             return /\S+@\S+\.\S+/.test(value); // Check if email contains the "@" symbol
+    //         },
+    //         message: 'Invalid email format',
+    //     },
   },
   userType: {
     type: String,
