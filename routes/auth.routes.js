@@ -8,3 +8,4 @@ module.exports = function(app) {
   // Endpoint for user sign in
   app.post('/crm/api/v1/auth/signin', authController.signIn);
 };
+

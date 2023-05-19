@@ -71,3 +71,4 @@ const verifySignUp = {
 };
 
 module.exports = verifySignUp;
+

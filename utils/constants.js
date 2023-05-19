@@ -13,3 +13,4 @@ module.exports = {
     rejected: 'REJECTED' // User status: Rejected
   }
 };
+

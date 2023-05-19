@@ -29,7 +29,6 @@ db.on('error', () => {
 // Handle successful DB connection
 db.once('open', () => {
 	console.log('Connection successful with the database');
-
 	// Create an admin user if it doesn't exist
 	init();
 });

@@ -38,3 +38,12 @@ const app = express();
 app.listen('8080', () => {
 	console.log('Application is started on the port 8080');
 });
+
+
+
+19.may.2023 => Agenda
+1. API to get list of all users
+2. API to get a user based on userId (querry Parameter)
+3. API for updating userType and userStatus
+   
+   Only admin should be able to update and find these above things
