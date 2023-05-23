@@ -20,14 +20,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     lowercase: true,
-    unique: true, // User's email address (case-insensitive, unique)
-    //  validate: {
-    //         validator: function (value) {
-    //             // Custom validation function
-    //             return /\S+@\S+\.\S+/.test(value); // Check if email contains the "@" symbol
-    //         },
-    //         message: 'Invalid email format',
-    //     },
+    unique: true, 
   },
   userType: {
     type: String,
@@ -53,7 +46,6 @@ const userSchema = new mongoose.Schema({
     } // Date when the user was last updated
   }
 });
-
 //Create the User model using the user schema
 module.exports = mongoose.model('User', userSchema);
 

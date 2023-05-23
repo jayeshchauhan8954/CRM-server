@@ -56,7 +56,6 @@ async function init() {
 		console.log(`Error while creating admin user ${e}`);
 	}
 }
-
 // Import routes
 require('./routes/auth.routes')(app);
 require('./routes/user.routes')(app);

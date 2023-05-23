@@ -40,8 +40,6 @@ validateSignUpRequest = async (req, res, next) => {
   		});
   		return;
 		}
-
-
 	// Step 6: Check if the email already exists
 	const email = await User.findOne({ email: req.body.email });
 	if (email != null) {

@@ -6,6 +6,5 @@ module.exports = function(app) {
   app.post('/crm/api/v1/auth/signup', [ verifySignUp.validateSignUpRequest ], authController.signUp);
   
   // Endpoint for user sign in
-  app.post('/crm/api/v1/auth/signin', authController.signIn);
+  app.post('/crm/api/v1/auth/signin', authController.signwIn);
 };
-

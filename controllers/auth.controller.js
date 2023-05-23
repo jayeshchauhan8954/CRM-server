@@ -15,7 +15,6 @@ exports.signUp = async (req, res) => {
   } else {
     userStatus = constants.userStatus.pending;
   }
-
   try {
     // Step 3: Create a new user in the database
     const createUser = await User.create({

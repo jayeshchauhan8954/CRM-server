@@ -24,7 +24,6 @@ verifyToken = (req, res, next) => {
         next(); // Proceeding to the next middleware or route
     });
 };
-
 // Middleware function to check if the user is an admin
 isAdmin = async (req, res, next) => {
     const user = await User.findOne({
