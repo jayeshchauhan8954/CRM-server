@@ -1,8 +1,9 @@
-// Exporting an object containing the verification middleware
-const verifySignUp = require('./verifySignUp');
+const verifySignUp = require('./verifySignUp')
 const authJwt = require('./authJwt')
-module.exports = {
-	verifySignUp,
-	authJwt
-};
+const verifyTicketRequestBody = require("./verifyTicketReqBody")
 
+module.exports = {
+    verifySignUp,
+    authJwt,
+    verifyTicketRequestBody
+}
