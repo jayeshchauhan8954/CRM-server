@@ -41,7 +41,6 @@ exports.signup = async (req, res) => {
         })
     }
 }
-
 exports.signin = async (req, res) => {
     const user = await User.findOne({userId: req.body.userId})
     if(!user){

@@ -1,5 +1,6 @@
 const User = require("../models/user.model")
 const convertUserObject = require("../utils/convertUserObject")
+const constants = require("../utils/constants")
 
 exports.findAll = async (req, res) => {
     try{
@@ -41,8 +42,7 @@ exports.update = async (req, res) => {
             userStatus: req.body.userStatus ,
             userType: req.body.userType
         }).exec();
-
-        if(user){
+        if(user ){
             return res.status(200).send({
                 message: "User updated successfully"
             })
